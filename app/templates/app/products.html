@@ -1,0 +1,58 @@
+{% extends 'app/base.html' %}
+    
+    {% block navigation %}
+          <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h5 class="text-info">Крамниця Appway</h5></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Додому</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html">Продукти
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock navigation %}
+    
+    
+    {% block content %}
+          <!-- Page Content -->
+    <!-- Items Starts Here -->
+    <div class="featured-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Products</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="featured container no-gutter">
+
+        <div class="row posts">
+            <div id="1" class="item new col-md-4">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="assets/images/myimage.jpg" alt="">
+                  <h4>Wears</h4>
+                  <h6>$20.00</h6>
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

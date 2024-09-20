@@ -1,0 +1,68 @@
+
+    {% extends 'app/base.html' %}
+    {% block navigation %}
+      <!-- Navigation -->
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h5 class="text-info">Крамниця Appway</h5></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item  active">
+              <a class="nav-link" href="index.html">Додому</a>
+                <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Продукти
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock navigation %}
+      
+    {% block content %}
+          <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <!-- Products Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Products</h1>
+            </div>
+          </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="single-product.html">
+                        <div class="featured-item">
+                         <img src="assets/images/myimage.jpg" alt=""> <!--  image by Photo by <a href="https://unsplash.com/@tobiastu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tobias Tullius</a> on <a href="https://unsplash.com/s/photos/trousers-on-hanger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                          <h4>Wears</h4>
+                          <h6>$20.00</h6>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Products Ends Here -->
+    {% endblock content %}
+
