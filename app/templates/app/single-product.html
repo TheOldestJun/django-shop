@@ -43,7 +43,7 @@
               <div id="slider" class="flexslider">
                 <ul class="slides">
                   <div>
-                    <img src="assets/images/myimage.jpg" />
+                    <img src="{{product.image.url}}" />
                   </div>
                 </ul>
               </div>
@@ -51,16 +51,16 @@
           </div>
           <div class="col-md-6">
             <div class="right-content">
-              <h4>Wears</h4>
-              <h6>$20.00</h6>
-              <p>Wears for all </p>
+              <h4>{{product.name}}</h4>
+              <h6>{{product.price}}</h6>
+              <p>{{product.description}}</p>
               <form action="" method="get">
-                <label for="quantity">Quantity:</label>
+                <label for="quantity">Кількість:</label>
                 <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
                 	onfocus="if(this.value == '1') { this.value = ''; }" 
                     onBlur="if(this.value == '') { this.value = '1';}"
                     value="1">
-                <input type="submit" class="button" value="Order Now!">
+                <input type="submit" class="button" value="Заказати!">
               </form>
               <div class="down-content">
               </div>

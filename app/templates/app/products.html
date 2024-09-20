@@ -44,15 +44,19 @@
     <div class="featured container no-gutter">
 
         <div class="row posts">
-            <div id="1" class="item new col-md-4">
-              <a href="single-product.html">
+          
+          {% for product in products %}
+            <div id="{{product.id}}" class="item new col-md-4">
+              <a href="{% url 'app:product_detail' id=product.id %}">
                 <div class="featured-item">
-                  <img src="assets/images/myimage.jpg" alt="">
-                  <h4>Wears</h4>
-                  <h6>$20.00</h6>
+                  <img src="{{product.image.url}}" alt="{{product.name}}">
+                  <h4>{{product.name}}</h4>
+                  <h6>{{product.price}}</h6>
                 </div>
               </a>
             </div>
+          {% endfor %}
+            
         </div>
     </div>
     {% endblock content %}
